@@ -1,0 +1,16 @@
+{
+  "name": "natfdb-prototype",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node natfdb-prototype.js"
+  },
+  "dependencies": {
+    "bootstrap": "latest",
+    "express": "latest",
+    "git": "latest",
+    "jquery": "latest",
+    "mime": "^2.3.1",
+    "mongodb": "latest",
+    "popper.js": "latest"
+  }
+}
