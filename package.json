@@ -5,12 +5,11 @@
     "start": "node natfdb-prototype.js"
   },
   "dependencies": {
+    "popper.js": "latest",
+    "jquery": "latest",
     "bootstrap": "latest",
     "express": "latest",
     "git": "latest",
-    "jquery": "latest",
-    "mime": "^2.3.1",
-    "mongodb": "latest",
-    "popper.js": "latest"
+    "mime": "^2.3.1"
   }
 }
