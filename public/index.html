@@ -1,0 +1,46 @@
+<!doctype hml>
+<html lang="en">
+<head>
+    <title>NATF Database Application</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-colvis-1.5.1/b-html5-1.5.2/b-print-1.5.2/cr-1.5.0/fc-3.2.5/fh-3.1.4/kt-2.4.0/r-2.2.2/rg-1.0.3/rr-1.2.4/sc-1.5.0/datatables.min.css"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="container">
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark navbar-fixed-top">
+          <a class="navbar-brand" href="#">
+              <img src="img/natf_logo.png" width="30" height="30" alt="NATF logo">NATF DB</a>
+          <!-- Toggler/collapsibe Button -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <div class="navbar-nav mr-auto mt-2 mt-lg-0" id="main-nav">
+                <a class="nav-item nav-link active" href="#" id="home"><i class="fas fa-home"></i>&nbsp;Home</a>
+                <a class="nav-item nav-link" href="#" id="add-encounter"><i class="fas fa-plus"></i>&nbsp;Add</a>
+                <a class="nav-item nav-link" href="#" id="history-encounter"><i class="fas fa-history"></i>&nbsp;History</a>
+                <a class="nav-item nav-link" href="#" id="profile"><i class="fas fa-user-alt"></i>&nbsp;Profile</a>
+            </div>
+                <form class="form-inline" action="/search.html">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+          </div>
+      </nav>
+
+        <div class="row">
+            
+        </div>
+        <div id="content"></div>
+        <script src="js/loader.js"></script>
+    </div> <!-- container -->
+    
+</body>
+</html>
