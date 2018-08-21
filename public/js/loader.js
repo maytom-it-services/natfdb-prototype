@@ -1,19 +1,26 @@
-$(document).ready(function(){
+$(document).ready(() => {
+
     // Initial load
     $('#content').load('home.html');
-
-    // handle nav clicks
+    // Handle nav clicks
     $('ul#main-nav li a').click(function() {
+
         var page = $(this).attr('id');
-        $('#content').load(page+'.html');
+        $('#content').load(`${page}.html`);
+
         return false;
+
+    });
+    // Comment model
+    $('.commentModel').on('click', () => {
+
+        $('.modal-body').load('comment-encounter.html',() => {
+
+            $('#encounterComment').modal({show: true});
+        
+        });
+    
     });
 
-    // Comment model
-    $('.commentModel').on('click',function(){
-        $('.modal-body').load('comment-encounter.html',function(){
-            $('#encounterComment').modal({show:true});
-        });
-    });
 });
 
