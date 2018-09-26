@@ -10,33 +10,68 @@
         </div>
         <div class="modal-body">
             <form>
-                <div class="form-group">
-                    <label for="weight" class="col-form-label">Weight:</label>
-                    <input type="text" class="form-control" id="weight">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="weight" class="col-form-label">Weight:</label>
+                            <input type="text" class="form-control" id="weight">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="weight-unit" class="col-form-label">Unit:</label>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="weightUnit" id="weightUnitGram" value="checkedValue"> gr
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="weightUnit" id="weightUnitKilogram" value="checkedValue"> Kg
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <small id="weightHint" class="form-text text-muted">Enter the current weight of the fauna and select the appropriate weight unit.</small>
                 </div>
-                <div class="form-group">
-                    <label for="weight-unit" class="col-form-label">Unit:</label>
-                    <select type="text" class="form-control" id="weight-unit">
-                        <option selected>Grams</option>
-                        <option>Kilograms</option>
-                    </select>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="measurement" class="col-form-label">Measurement:</label>
+                            <input type="text" class="form-control" id="measurement" aria-describedby="measureHint">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="measurement-unit" class="col-form-label">Unit:</label>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="measureUnit" id="measureUnitMilli" value="checkedValue"> mm
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="measureUnit" id="measureUnitCenti" value="checkedValue"> cm
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="measureUnit" id="measureUnitMeter" value="checkedValue"> meters
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <small id="measureHint" class="form-text text-muted">Enter the current measurement of the fauna and select the appropriate measurement unit.</small>
                 </div>
-                <div class="form-group">
-                    <label for="measurement" class="col-form-label">Measurement:</label>
-                    <input type="text" class="form-control" id="measurement">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="comment-text" class="col-form-label">Comment:</label>
+                        <textarea class="form-control" id="comment-text" rows="10" cols="80"></textarea>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="measurement-unit" class="col-form-label">Unit:</label>
-                    <select type="text" class="form-control" id="measurement-unit">
-                        <option selected>mm</option>
-                        <option>cm</option>
-                        <option>m</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="comment-text" class="col-form-label">Comment:</label>
-                    <textarea class="form-control" id="comment-text"></textarea>
-                </div>
+                
+                
+                
             </form>
         </div>
         <div class="modal-footer">
