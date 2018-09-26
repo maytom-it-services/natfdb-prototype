@@ -6,21 +6,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
 </head>
-<body>
-    <div>
-        <div>
-        <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-               <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-              <li><a href="/about">About us</a></li>
-              <li><a href="/contact">Contact us</a></li>
-            </ul>
-        </nav>
+<form method="dialog">
+    <h2 class="text-center">NATF Admin Contact</h2>
+    <p>Use this form to contact the NATF administrator for help about an encounter</p>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="selectTopic">Topic</label>
+            <select class="form-control" name="topic" id="selectTopic" placeholder="Select Topic" aria-describedby="helpTopic">
+                <option value="general">General Enquiry</option>
+                <option value="issue">Encounter Issue</option>
+                <option value="system">System Issue</option>
+                <option value="help">Require Assistance</option>
+                <option value="other">Other</option>
+            </select>
+            <small id="helpTopic" class="text-muted">Select topic for message</small>
         </div>
-        <br/>
-        <div class="jumbotron"> <p>
-        This is place to put content. You can put slider, short description about your website and place some links for navigation.
-        </p></div>
+        .<div class="form-group">
+          <label for="txtEncounter">Encounter ID</label>
+          <input type="text" name="encounterId" id="txtEncounter" class="form-control" placeholder="Enter ID" aria-describedby="helpEncounterId">
+          <small id="helpEncounterId" class="text-muted">ID number of related encounter</small>
         </div>
-</body>
-</html>
+    </div>
+    
+    <div class="form-group">
+        <label for="txtMessage"></label>
+        <textarea class="form-control" name="message" id="txtMessage" cols="30" rows="10" placeholder="Enter message text" aria-describedby="helpMessage"></textarea>
+        <small id="helpMessage" class="text-muted">Enter detailed information about the enquiry here</small>
+    </div>
+</form>
