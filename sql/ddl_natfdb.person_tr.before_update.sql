@@ -1,0 +1,3 @@
+CREATE DEFINER=`natfadmin`@`192.168.1.%` TRIGGER `person_BEFORE_UPDATE` BEFORE UPDATE ON `person` FOR EACH ROW BEGIN
+	SET NEW.sys_created_on = NOW();
+END
